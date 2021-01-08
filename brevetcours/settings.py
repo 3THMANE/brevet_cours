@@ -26,7 +26,7 @@ SECRET_KEY = '6x05nuv&c!f+qp_mth#nj)1t3__f7i61)25))qm@3e2mu5rtas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['peaceful-shore-08347.herokuapp.com']
+ALLOWED_HOSTS = ['brevet-cours.herokuapp.com','127.0.0:8000']
 
 
 # Application definition
