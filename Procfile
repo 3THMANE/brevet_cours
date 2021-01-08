@@ -1,1 +1,1 @@
-web: gunicorn brevetcours.wsgi
+web: gunicorn brevetcours.wsgi --log-file -
