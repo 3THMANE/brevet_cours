@@ -1,0 +1,84 @@
+{% extends "base.html" %} {% load static %} {% block nav %} {% include "ar/nav.html" %} {% endblock nav %} {% block body %}
+<div class="main-content">
+    <div class="container">
+
+        {% if b_ar_20 %}
+        <h1 class="cours">مسابقة ختم دروس الاعدادية 2020 </h1>
+
+
+        {% for b_a_20 in b_ar_20 %}
+        <a href="{% url 'b_a_detail_20' b_a_20.slug %}" class="link">
+            <div class=" row1">
+                <h2 class="title">{{b_a_20.title}}</h2>
+                <small class="small">مسابقة : {{b_a_20.create|date:'Y'}}</small>
+                <div class="text">{{b_a_20.text|slice:200}}
+                    <span class="rd">عرض المزيد</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_ar_19 %}
+        <h1 class="cours">مسابقة ختم دروس الاعدادية 2019</h1>
+        {% for b_a_19 in b_ar_19 %}
+        <a href="{% url 'b_a_detail_19' b_a_19.slug %}" class="link">
+            <div class=" row1">
+                <h2 class="title">{{b_a_19.title}}</h2>
+                <small class="small">مسابقة :  {{b_a_19.create|date:'Y'}}</small>
+                <div class="text">{{b_a_19.text|slice:200}}
+                    <span class="rd">عرض المزيد</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_ar_18 %}
+        <h1 class="cours">مسابقة ختم دروس الاعدادية 2018</h1>
+        {% for b_a_18 in b_ar_18 %}
+        <a href="{% url 'b_a_detail_18' b_a_18.slug %}" class="link">
+            <div class=" row1">
+                <h2 class="title">{{b_a_18.title}}</h2>
+                <small class="small">مسابقة :  {{b_a_18.create|date:'Y'}}</small>
+                <div class="text">{{b_a_18.text|slice:200}}
+                    <span class="rd">عرض المزيد</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_ar_17 %}
+        <h1 class="cours">مسابقة ختم دروس الاعدادية 2017</h1>
+        {% for b_a_17 in b_ar_17 %}
+        <a href="{% url 'b_a_detail_17' b_a_17.slug %}" class="link">
+            <div class=" row1">
+                <h2 class="title">{{b_a_17.title}}</h2>
+                <small class="small">مسابقة :  {{b_a_17.create|date:'Y'}}</small>
+                <div class="text">{{b_a_17.text|slice:200}}
+                    <span class="rd">عرض المزيد</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}{% endif %} {% if b_ar_16 %}
+        <h1 class="cours">مسابقة ختم دروس الاعدادية 2016</h1>
+        {% for b_a_16 in b_ar_16 %}
+        <a href="{% url 'b_a_detail_16' b_a_16.slug %}" class="link">
+            <div class=" row1">
+                <h2 class="title">{{b_a_16.title}}</h2>
+                <small class="small">مسابقة :  {{b_a_16.create|date:'Y'}}</small>
+                <div class="text">{{b_a_16.text|slice:200}}
+                    <span class="rd">عرض المزيد</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_ar_15 %}
+        <h1 class="cours">مسابقة ختم دروس الاعدادية 2015</h1>
+        {% for b_a_15 in b_ar_15 %}
+        <a href="{% url 'b_a_detail_15' b_a_15.slug %}" class="link">
+            <div class=" row1">
+                <h2 class="title">{{b_a_15.title}}</h2>
+                <small class="small">مسابقة :  {{b_a_15.create|date:'Y'}}</small>
+                <div class="text">{{b_a_15.text|slice:200}}
+                    <span class="rd">عرض المزيد</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %}
+    </div>
+</div>
+
+
+{% endblock body %}

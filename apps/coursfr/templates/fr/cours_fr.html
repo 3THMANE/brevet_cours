@@ -1,0 +1,80 @@
+ {% extends "base.html" %} {% load static %}{% block nav %} {% include "fr/nav.html" %} {% endblock nav %} {% block body %}
+<div class="main-content-fr">
+    <div class="container fr">
+
+        {% if b_fr_20 %}
+        <h1 class="cours">Concours Du Brevet 2020 </h1>
+        {% for b_f_20 in b_fr_20 %}
+        <a href="{% url 'f_detail_20' b_f_20.slug %}" class="link">
+            <div class=" row1 ">
+                <h2 class="title">{{b_f_20.title}}</h2>
+                <small class="small">Brevet  : {{b_f_20.create|date:'Y'}}</small>
+                <div class="text">{{b_f_20.text|slice:200}}
+                    <span class="rd">Avoir plus </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_fr_19 %}
+        <h1 class="cours">Concours Du Brevet 2019</h1>
+        {% for b_f_19 in b_fr_19 %}
+        <a href="{% url 'f_detail_19' b_f_19.slug %}" class="link">
+            <div class=" row1 ">
+                <h2 class="title">{{b_f_19.title}}</h2>
+                <small class="small">Brevet  :  {{b_f_19.create|date:'Y'}}</small>
+                <div class="text">{{b_f_19.text|slice:200}}
+                    <span class="rd">Avoir plus </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_fr_18 %}
+        <h1 class="cours f">Concours Du Brevet 2018</h1>
+        {% for b_f_18 in b_fr_18 %}
+        <a href="{% url 'f_detail_18' b_f_18.slug %}" class="link">
+            <div class=" row1 ">
+                <h2 class="title">{{b_f_18.title}}</h2>
+                <small class="small">Brevet  :  {{b_f_18.create|date:'Y'}}</small>
+                <div class="text">{{b_f_18.text|slice:200}}
+                    <span class="rd">Avoir plus </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_fr_17 %}
+        <h1 class="cours f"> Concours Du Brevet 2017</h1>
+        {% for b_f_17 in b_fr_17 %}
+        <a href="{% url 'f_detail_17' b_f_17.slug %}" class="link">
+            <div class=" row1 ">
+                <h2 class="title">{{b_f_17.title}}</h2>
+                <small class="small">Brevet  :  {{b_f_17.create|date:'Y'}}</small>
+                <div class="text">{{b_f_17.text|slice:200}}
+                    <span class="rd">Avoir plus </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}{% endif %} {% if b_fr_16 %}
+        <h1 class="cours f">Concours Du Brevet 2016</h1>
+        {% for b_f_16 in b_fr_16 %}
+        <a href="{% url 'f_detail_16' b_f_16.slug %}" class="link">
+            <div class=" row1 ">
+                <h2 class="title">{{b_f_16.title}}</h2>
+                <small class="small">Brevet  :  {{b_f_16.create|date:'Y'}}</small>
+                <div class="text">{{b_f_16.text|slice:200}}
+                    <span class="rd">Avoir plus </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %} {% if b_fr_15 %}
+        <h1 class="cours f">Concours Du Brevet 2015</h1>
+        {% for b_f_15 in b_fr_15 %}
+        <a href="{% url 'f_detail_15' b_f_15.slug %}" class="link">
+            <div class=" row1 ">
+                <h2 class="title">{{b_f_15.title}}</h2>
+                <small class="small">Brevet  :  {{b_f_15.create|date:'Y'}}</small>
+                <div class="text">{{b_f_15.text|slice:200}}
+                    <span class="rd">Avoir plus </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %} {% endif %}
+    </div>
+</div>
+{% endblock body %}

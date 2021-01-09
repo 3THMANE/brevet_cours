@@ -1,0 +1,49 @@
+{% load static %}
+<nav class="main-navbar">
+<div class="container">
+    <a href="{% url 'home' %}" class="nav-brand">ethmane <span>sneiguel</span></a>
+    <button class="btn-bar">
+        <i class="fa fa-bars bar"></i>
+    </button>
+    <div class="scrol">
+
+        <ul class="nav-list">
+            <button class="btn">
+                <i class="fa fa-times time"></i>
+            </button>
+            <li class="nav-items">
+                <a href="{% url 'home' %}" class="nav-link">
+                    <i class="fa fa-home icon"></i>الرئيسية</a>
+            </li>
+
+            <li class="nav-items">
+                <a href="{% url 'b_ar_20' %}" class="nav-link">
+                    <i class="fa  fa-book icon "></i>المواد العربية</a>
+            </li>
+
+            <li class="nav-items">
+                <a href="{% url 'b_fr_20' %}" class="nav-link">
+                    <i class="fa fa-book-open icon"></i>المواد الفرنسية</a>
+
+            </li>
+            <!-- <li class="nav-items">
+                <a href="{% url 'about' %}" class="nav-link">
+                    <i class="fa fa-user-plus icon"></i>تعرف علينا</a>
+
+            </li>
+            <li class="nav-items">
+                <a href="{% url 'contact' %}" class="nav-link">
+                    <i class="fa fa-phone icon"></i>اتصل بنا</a>
+
+            </li> -->
+
+            <form class="main-search">
+                <input type="search" placeholder="البحث" class="search">
+
+            </form>
+
+        </ul>
+
+    </div>
+</div>
+</nav>

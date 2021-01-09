@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% load static %} {% block nav %} {% include "navbar.html" %} {% endblock nav %} {% block body %}
+
+<div class="main-content">
+    <div class="head">
+        <h2 class="head-t">تواصل معنا</h2>
+    </div>
+
+    <form class="main-form" method="POST" action="{% url 'contact' %}">{% csrf_token %}
+        <input type="text" name="name" placeholder="اسم" required>
+        <input type="text" name="phone" placeholder="رقم الهاتف" required>
+        <input type="text" name="email" placeholder="البريد الكتروني" required>
+        <div class="form">
+            <textarea name="message" placeholder="اكتب رسالتك" required></textarea>
+
+            <button type="submit" class="bn">ارسال</button>
+        </div>
+    </form>
+    <div class="social">
+        <h2 class="h2">راسلنا عبر المواقع</h2>
+        <span><i class="fab fa-fw fa-whatsapp"></i></span>
+        <span><i class="fab fa-fw fa-facebook-f"></i></span>
+        <span><i class="fab fa-fw fa-twitter"></i></span>
+    </div>
+</div>
+{% endblock body %}

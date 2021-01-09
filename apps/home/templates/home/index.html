@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block nav %} {% include "navbar.html" %} {% endblock nav %} {% load static %} {% block body %}
+
+<div class="bg">
+<div class="container">
+    
+        <div class="header">
+            <p class="col-lg-5 container-xl hero">
+                مرحبا بكم في <span>صفحة</span> موقعنا الرئيسة لتقديم تصحيح مواد مسابقة ختم دروس الاعدادية
+            </p>
+        </div>
+
+    <div class="row">
+        <div class="col-md-4 ">
+                            <a href="{% url 'b_ar_20' %}">
+            <h2 class="title">
+                مسابقات
+            </h2>
+            <p class="text">Lorem ipsum adipisicing eaque debitis architecto aut neque corrupti ducimus delectus ea?</p></a>
+
+        </div>
+        <div class="col-md-4 ">
+                            <a href="{% url 'b_fr_20' %}">
+            <h2 class="title">
+                Brevet Corigee
+            </h2>
+            <p class="text">Lorem ipsum adipisicing eaque debitis architecto aut neque corrupti ducimus delectus ea?</p></a>
+        </div>
+        <div class="col-md-4 ">
+                            <a href="{% url 'b_fr_20' %}">
+            <h2 class="title">
+                Exercice
+            </h2>
+            <p class="text">Lorem ipsum dolor sit amet quasi eaque debitis architecto aut neque corrupti ducimus </p>
+
+       </a> 
+       </div>
+    </div>
+
+
+
+</div>
+
+</div>
+{% endblock body %}

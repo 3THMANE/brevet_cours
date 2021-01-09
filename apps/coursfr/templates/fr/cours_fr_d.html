@@ -1,0 +1,141 @@
+{% extends "base.html" %} {% load static %}{% block nav %} {% include "fr/nav.html" %} {% endblock nav %} {% block body %}
+
+<div class="main-content-fr bg">
+
+    {% if b_f_d_20 %}
+    <div class="head">
+        <h2 class="head-t">
+
+            Concours Du Brevet 2020
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{b_f_d_20.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+    </small> -->
+        <p class="text m-0 pb">
+            {{b_f_d_20.text}}
+        </p>
+
+    </div>
+    {% endif %} {% if b_f_d_19 %}
+    <div class="head">
+        <h2 class="head-t">
+
+            Concours Du Brevet 2019
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{b_f_d_19.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+    </small> -->
+        <p class="text m-0 pb">
+            {{b_f_d_19.text}}
+        </p>
+
+    </div>
+    {% endif %} {% if b_f_d_18 %}
+    <div class="head">
+        <h2 class="head-t">
+
+            Concours Du Brevet 2018
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{b_f_d_18.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+    </small> -->
+        <p class="text m-0 pb">
+            {{b_f_d_18.text}}
+        </p>
+
+    </div>
+    {% endif %} {% if b_f_d_17 %}
+    <div class="head">
+        <h2 class="head-t">
+
+            Concours Du Brevet 2017
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{b_f_d_17.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+    </small> -->
+        <p class="text m-0 pb">
+            {{b_f_d_17.text}}
+        </p>
+
+    </div>
+    {% endif %} {% if b_f_d_16 %}
+    <div class="head">
+        <h2 class="head-t">
+
+            Concours Du Brevet 2016
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{b_f_d_16.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+     </small> -->
+        <p class="text m-0 pb">
+            {{b_f_d_16.text}}
+        </p>
+    </div>
+    {% endif %} {% if b_f_d_15 %}
+    <div class="head">
+        <h2 class="head-t">
+
+            Concours Du Brevet 2015
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{b_f_d_15.title|title}}
+        </h1>
+        <!-- <small class="small">
+                {{ar_detail.create|date:'Y - d - m'}}
+        </small> -->
+        <p class="text m-0 pb">
+            {{b_f_d_15.text}}
+        </p>
+
+    </div>
+    {% endif %}
+
+</div>
+
+
+{% endblock body %}
