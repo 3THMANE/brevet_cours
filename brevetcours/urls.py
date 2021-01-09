@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from django.conf.urls import handler404, handler500
 from .import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin-ethmane/', admin.site.urls),
     path('', include('apps.home.urls')),
     # path('summernote/', include('django_summernote.urls')),
    
