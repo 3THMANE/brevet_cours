@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'brevetcours.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME' : 'd2p3p392fhql09',
-        'USER' : 'adayhrsmtscihw',
+        'NAME' : 'd19dkfjuh8r65m',
+        'USER' : 'bsjotpwowfswnz',
         'PORT' : '5432',
-        'PASSWORD' : '975266f7c2e132f9ab390a6f357e6029fb01a9629afa3775e46cdad5c9ce0439',
-        'HOST' : 'ec2-3-231-241-17.compute-1.amazonaws.com',
+        'PASSWORD' : 'e0b758c277989aa6fe3179d7314ca4fdd41d89abbdd424f98202dd7c4672b2c3',
+        'HOST' : 'ec2-54-85-13-135.compute-1.amazonaws.com',
         
     }
 }
