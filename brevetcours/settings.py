@@ -84,10 +84,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.ec2-3-231-241-17.compute-1.amazonaws.com',
         'NAME':'d2p3p392fhql09',
-        'USER':'adayhrsmtscihw'
-        'PORT':'5432'
+        'USER':'adayhrsmtscihw',
+        'PORT':'5432',
         # 'HOST':'ec2-3-231-241-17.compute-1.amazonaws.com'
-        'PASSWORD':'975266f7c2e132f9ab390a6f357e6029fb01a9629afa3775e46cdad5c9ce0439'
+        'PASSWORD':'975266f7c2e132f9ab390a6f357e6029fb01a9629afa3775e46cdad5c9ce0439',
     }
 }
 
