@@ -4,6 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 STATUS = (('draft', 'Draft'),
           ('published', 'Published'))
 class Bepcfr2020(models.Model):
+    id = models.AutoField(primary_key=True)  
     slug = models.CharField(_("Slug"),     max_length=100, unique=True)
     name =models.CharField(_("subject"),   max_length=200, unique=True)
     title =models.CharField(_("Titel"),    max_length=200, unique=True)
@@ -18,6 +19,7 @@ class Bepcfr2020(models.Model):
         verbose_name_plural = 'BEPC_FR_2020'
         
 class Bepcfr2019(models.Model):
+    id = models.AutoField(primary_key=True)  
     slug = models.CharField(_("Slug"),     max_length=100, unique=True)
     name =models.CharField(_("subject"),   max_length=200, unique=True)
     title =models.CharField(_("Titel"),    max_length=200, unique=True)
@@ -33,6 +35,7 @@ class Bepcfr2019(models.Model):
         verbose_name_plural = 'BEPC_FR_2019'
 
 class Bepcfr2018(models.Model):
+    id = models.AutoField(primary_key=True)  
     slug = models.CharField(_("Slug"),     max_length=100, unique=True)
     name =models.CharField(_("subject"),   max_length=200, unique=True)
     title =models.CharField(_("Titel"),    max_length=200, unique=True)
@@ -48,6 +51,7 @@ class Bepcfr2018(models.Model):
         verbose_name_plural = 'BEPC_FR_2018'
 
 class Bepcfr2017(models.Model):
+    id = models.AutoField(primary_key=True)  
     slug = models.CharField(_("Slug"),     max_length=100, unique=True)
     name =models.CharField(_("subject"),   max_length=200, unique=True)
     title =models.CharField(_("Titel"),    max_length=200, unique=True)
@@ -63,6 +67,7 @@ class Bepcfr2017(models.Model):
         verbose_name_plural = 'BEPC_FR_2017'
 
 class Bepcfr2016(models.Model):
+    id = models.AutoField(primary_key=True)  
     slug = models.CharField(_("Slug"),     max_length=100, unique=True)
     name =models.CharField(_("subject"),   max_length=200, unique=True)
     title =models.CharField(_("Titel"),    max_length=200, unique=True)
@@ -78,6 +83,7 @@ class Bepcfr2016(models.Model):
         verbose_name_plural = 'BEPC_FR_2016'
 
 class Bepcfr2015(models.Model):
+    id = models.AutoField(primary_key=True)  
     slug = models.CharField(_("Slug"),     max_length=100, unique=True)
     name =models.CharField(_("subject"),   max_length=200, unique=True)
     title =models.CharField(_("Titel"),    max_length=200, unique=True)
