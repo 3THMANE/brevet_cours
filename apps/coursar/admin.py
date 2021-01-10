@@ -5,7 +5,7 @@ from .models import Bepcar2020, Bepcar2019, Bepcar2018, Bepcar2017, Bepcar2016, 
 
 
 class ArAdmin(admin.ModelAdmin):
-	list_display = ('title', 'status','create')
+	list_display = ('title', 'status','brevet')
 admin.site.register(Bepcar2020, ArAdmin)
 admin.site.register(Bepcar2019, ArAdmin)
 admin.site.register(Bepcar2018, ArAdmin)

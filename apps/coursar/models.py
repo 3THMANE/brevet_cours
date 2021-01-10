@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-# Create your models here.
+# brevet your models here.
 STATUS = (('draft', 'إخفاء'),
           ('published', 'نشر'))
 class Bepcar2020(models.Model):
@@ -9,7 +9,7 @@ class Bepcar2020(models.Model):
     name =models.CharField(_("المادة"),    max_length=200, unique=True)
     title =models.CharField(_("الموضوع"),  max_length=200, unique=True)
     text = models.TextField(_("النص"))
-    create = models.IntegerField(_("مسابقة"), null=True, blank=True)
+    brevet = models.IntegerField(_("مسابقة"), null=True, blank=True)
     status = models.CharField(_("حالة"),   max_length=20, choices=STATUS, default='draft')
     def __str__(self):
         return self.title
@@ -39,7 +39,7 @@ class Bepcar2018(models.Model):
     name =models.CharField(_("المادة"),    max_length=200, unique=True)
     title =models.CharField(_("الموضوع"),  max_length=200, unique=True)
     text = models.TextField(_("النص"))
-    create = models.IntegerField(_("مسابقة"), null=True, blank=True)
+    brevet = models.IntegerField(_("مسابقة"), null=True, blank=True)
     status = models.CharField(_("حالة"),   max_length=20, choices=STATUS, default='draft')
     def __str__(self):
         return self.title
@@ -54,7 +54,7 @@ class Bepcar2017(models.Model):
     name =models.CharField(_("المادة"),    max_length=200, unique=True)
     title =models.CharField(_("الموضوع"),  max_length=200, unique=True)
     text = models.TextField(_("النص"))
-    create = models.IntegerField(_("مسابقة"), null=True, blank=True)
+    brevet = models.IntegerField(_("مسابقة"), null=True, blank=True)
     status = models.CharField(_("حالة"),   max_length=20, choices=STATUS, default='draft')
     def __str__(self):
         return self.title
@@ -69,7 +69,7 @@ class Bepcar2016(models.Model):
     name =models.CharField(_("المادة"),    max_length=200, unique=True)
     title =models.CharField(_("الموضوع"),  max_length=200, unique=True)
     text = models.TextField(_("النص"))
-    create = models.IntegerField(_("مسابقة"), null=True, blank=True)
+    brevet = models.IntegerField(_("مسابقة"), null=True, blank=True)
     status = models.CharField(_("حالة"),   max_length=20, choices=STATUS, default='draft')
     def __str__(self):
         return self.title
@@ -84,7 +84,7 @@ class Bepcar2015(models.Model):
     name =models.CharField(_("المادة"),    max_length=200, unique=True)
     title =models.CharField(_("الموضوع"),  max_length=200, unique=True)
     text = models.TextField(_("النص"))
-    create =models.IntegerField(_("مسابقة"), null=True, blank=True)
+    brevet =models.IntegerField(_("مسابقة"), null=True, blank=True)
     status = models.CharField(_("حالة"),   max_length=20, choices=STATUS, default='draft')
     def __str__(self):
         return self.title

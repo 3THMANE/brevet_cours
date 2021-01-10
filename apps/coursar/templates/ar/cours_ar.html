@@ -9,7 +9,7 @@
         {% for b_a_20 in b_ar_20 %}
         <a href="{% url 'b_a_detail_20' b_a_20.slug %}" class="link">
             <div class=" row1">
-                <h2 class="title">{{b_a_20.title}}</h2>
+                <h2 class="title">{{b_a_20.title|title}}</h2>
                 <small class="small">مسابقة : {{b_a_20.brevet}}</small>
                 <div class="text">{{b_a_20.text|slice:200}}
                     <span class="rd">عرض المزيد</span>
@@ -21,7 +21,7 @@
         {% for b_a_19 in b_ar_19 %}
         <a href="{% url 'b_a_detail_19' b_a_19.slug %}" class="link">
             <div class=" row1">
-                <h2 class="title">{{b_a_19.title}}</h2>
+                <h2 class="title">{{b_a_19.title|title}}</h2>
                 <small class="small">مسابقة :  {{b_a_19.create|date:'Y'}}</small>
                 <div class="text">{{b_a_19.text|slice:200}}
                     <span class="rd">عرض المزيد</span>
@@ -33,7 +33,7 @@
         {% for b_a_18 in b_ar_18 %}
         <a href="{% url 'b_a_detail_18' b_a_18.slug %}" class="link">
             <div class=" row1">
-                <h2 class="title">{{b_a_18.title}}</h2>
+                <h2 class="title">{{b_a_18.title|title}}</h2>
                 <small class="small">مسابقة :  {{b_a_18.create|date:'Y'}}</small>
                 <div class="text">{{b_a_18.text|slice:200}}
                     <span class="rd">عرض المزيد</span>
@@ -45,7 +45,7 @@
         {% for b_a_17 in b_ar_17 %}
         <a href="{% url 'b_a_detail_17' b_a_17.slug %}" class="link">
             <div class=" row1">
-                <h2 class="title">{{b_a_17.title}}</h2>
+                <h2 class="title">{{b_a_17.title|title}}</h2>
                 <small class="small">مسابقة :  {{b_a_17.create|date:'Y'}}</small>
                 <div class="text">{{b_a_17.text|slice:200}}
                     <span class="rd">عرض المزيد</span>
@@ -57,7 +57,7 @@
         {% for b_a_16 in b_ar_16 %}
         <a href="{% url 'b_a_detail_16' b_a_16.slug %}" class="link">
             <div class=" row1">
-                <h2 class="title">{{b_a_16.title}}</h2>
+                <h2 class="title">{{b_a_16.title|title}}</h2>
                 <small class="small">مسابقة :  {{b_a_16.create|date:'Y'}}</small>
                 <div class="text">{{b_a_16.text|slice:200}}
                     <span class="rd">عرض المزيد</span>
@@ -69,7 +69,7 @@
         {% for b_a_15 in b_ar_15 %}
         <a href="{% url 'b_a_detail_15' b_a_15.slug %}" class="link">
             <div class=" row1">
-                <h2 class="title">{{b_a_15.title}}</h2>
+                <h2 class="title">{{b_a_15.title|title}}</h2>
                 <small class="small">مسابقة :  {{b_a_15.create|date:'Y'}}</small>
                 <div class="text">{{b_a_15.text|slice:200}}
                     <span class="rd">عرض المزيد</span>
