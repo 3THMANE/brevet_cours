@@ -3,6 +3,11 @@ from import_export.admin import ImportExportModelAdmin
 from .models import Bepcar2020, Bepcar2019, Bepcar2018, Bepcar2017, Bepcar2016, Bepcar2015
 # Register your models here.
 
+# from django_summernote.admin import SummernoteModelAdmin
+# class PostAdmin(SummernoteModelAdmin):
+#     summernote_fields = ('text',)
+
+# admin.site.register(Post, PostAdmin)
 
 class ArAdmin(admin.ModelAdmin):
 	list_display = ('title', 'status','brevet')

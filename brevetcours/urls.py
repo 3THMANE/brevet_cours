@@ -23,8 +23,13 @@ urlpatterns = [
     path('admin-ethmane/', admin.site.urls),
     path('', include('apps.home.urls')),
     # path('summernote/', include('django_summernote.urls')),
+    path('tinymce/', include('tinymce.urls')),
+    # path('jet/', include('jet.urls', 'jet')),
    
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = views.error_404
 handler500 = views.error_500
