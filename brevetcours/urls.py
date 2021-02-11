@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin-ethmane/', admin.site.urls),
     path('', include('apps.home.urls')),
     # path('summernote/', include('django_summernote.urls')),
-    path('tinymce/', include('tinymce.urls')),
+    # path('tinymce/', include('tinymce.urls')),
     # path('jet/', include('jet.urls', 'jet')),
    
 ]

@@ -1,6 +1,8 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
-from .models import Bepcar2020, Bepcar2019, Bepcar2018, Bepcar2017, Bepcar2016, Bepcar2015
+from .models import Brevet_Ar
+from .models import Cours_Ar
+from .models import Cours_Ar_T
 # Register your models here.
 
 # from django_summernote.admin import SummernoteModelAdmin
@@ -10,13 +12,10 @@ from .models import Bepcar2020, Bepcar2019, Bepcar2018, Bepcar2017, Bepcar2016, 
 # admin.site.register(Post, PostAdmin)
 
 class ArAdmin(admin.ModelAdmin):
-	list_display = ('title', 'status','brevet')
-admin.site.register(Bepcar2020, ArAdmin)
-admin.site.register(Bepcar2019, ArAdmin)
-admin.site.register(Bepcar2018, ArAdmin)
-admin.site.register(Bepcar2017, ArAdmin)
-admin.site.register(Bepcar2016, ArAdmin)
-admin.site.register(Bepcar2015, ArAdmin)
+	list_display = ('title', 'status','create')
+admin.site.register(Brevet_Ar, ArAdmin)
+admin.site.register(Cours_Ar, ArAdmin)
+admin.site.register(Cours_Ar_T)
 # admin.site.register(Profile, ProfileAdmin)
 
     # from django.contrib import admin

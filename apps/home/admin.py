@@ -4,7 +4,6 @@ from django.contrib import admin
 # from apps.coursar.models import Coursar, Coursesar
 from .models import Contact
 
-
 # from .models import Coursfr
 # Register your models here.
 

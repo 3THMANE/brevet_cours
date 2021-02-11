@@ -107,9 +107,15 @@
 }
 
 .nav-items {
-    margin: 0 0;
+    margin: 0 -10px 0px -15px;
 }
-
+.aro {
+    color: #00ffc4;
+    /* margin-right: 0rem; */
+}
+.aro:hover{
+    color: #fff;
+}
 @media(max-width: 991px) {
     .main-navbar .nav-list .nav-link:hover {
         box-shadow: 0 3px 0px #57c7a5 !important;
@@ -159,7 +165,7 @@
 }
 
 @media(max-width: 576px) {
-    
+   
 }
 
 @media(max-width: 768px) {

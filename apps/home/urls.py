@@ -5,7 +5,7 @@ from .import views
 # from apps.coursfr.views import cours_fr
 urlpatterns = [
     path('', views.home, name="home"),
-    # path('n/', views.nav, name="home"),
+    path('courses/', views.courses, name="courses"),
     # path('load/', views.load, name="load"),
     path('about/', views.about, name="about"),
     path('contact/', views.contact, name="contact"),

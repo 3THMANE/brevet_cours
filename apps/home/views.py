@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from .models import Contact
+
 # from apps.coursar.models import Bepcar2020
-# from apps.coursfr.models import Coursfr
+from apps.coursfr.models import Cours_Fr
+from apps.coursar.models import Cours_Ar
 # from django.http import JsonResponse
 # from django.core import serializers
 
@@ -10,6 +12,31 @@ def home(request):
     return render(request, 'home/index.html',{
                          
                         })
+
+
+
+def courses(request):
+    cours_ar = Cours_Ar.objects.all()
+    cours_fr = Cours_Fr.objects.all()
+    return render(request, 'home/all_c.html',{
+        'cours_ar':cours_ar,
+        'cours_fr':cours_fr
+        })
+
+# def c_a_detail(request, slug):
+#     c_a_detail = Cours_Ar.objects.get(slug=slug)
+#     return render(request, 'home/all_d.html',{
+#         'c_a_detail':c_a_detail
+        
+#         })
+# def c_f_detail(request, slug):
+#     c_f_detail = Cours_Fr.objects.get(slug=slug)
+#     return render(request, 'home/all_d.html',{
+#         'c_f_detail':c_f_detail
+        
+#         })
+
+
 # def nav(request): 
 #     b_ar_20 = Bepcar2020.objects.all()[:1]
 #     # cours_ar = Coursar.objects.all()[0:2]

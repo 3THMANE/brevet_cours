@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% load static %} {% block title %}Brevet-Cours | Arabic-courses{% endblock title%}{% block nav %} {% include "ar/nav.html" %} {% endblock nav %} {% block body %}
+
+    <div class="main-content-fr">
+         <div class="container fr">
+         {% if cours_fr %}
+            <h1 class="cours">Courses De Francais  </h1>
+            {% for coursf in cours_fr %}
+            <a href="{% url 'detail' coursf.slug %}" class="link">
+                <div class=" row1">
+                    <h2 class="title">{{coursf.title|title}}</h2>
+                    <small class="small"> <i class="fa-clock fa-fw far"></i> {{coursf.create|date:'Y - M - d'}} <i class="fa-tags fa-fw fas"></i> {{coursf.Lesson.title}}</small>
+                    
+                    <div class="text">{{coursf.text|slice:200}}
+                        <span class="rd"> Plus ...</span>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+            
+       </div>{% endif %}
+
+{% endblock body %}

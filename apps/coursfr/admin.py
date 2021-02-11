@@ -1,12 +1,11 @@
 from django.contrib import admin
-from .models import Bepcfr2020, Bepcfr2019, Bepcfr2018, Bepcfr2017, Bepcfr2016, Bepcfr2015
+from .models import Brevet_Fr
+from .models import Cours_Fr
+from .models import Cours_Fr_T
 # Register your models here.
 class FrAdmin(admin.ModelAdmin):
-    list_display = ('title','status','brevet')
+    list_display = ('title','status','create')
 
-admin.site.register(Bepcfr2020, FrAdmin)
-admin.site.register(Bepcfr2019, FrAdmin)
-admin.site.register(Bepcfr2018, FrAdmin)
-admin.site.register(Bepcfr2017, FrAdmin)
-admin.site.register(Bepcfr2016, FrAdmin)
-admin.site.register(Bepcfr2015, FrAdmin)
+admin.site.register(Brevet_Fr, FrAdmin)
+admin.site.register(Cours_Fr, FrAdmin)
+admin.site.register(Cours_Fr_T)

@@ -1,0 +1,55 @@
+
+{% extends "base.html" %} {% load static %} {% block title %}Brevet-Cours | Arabic-courses{% endblock title%}{% block nav %} {% include "ar/nav.html" %} {% endblock nav %} {% block body %}
+ {% if c_a_detail %}
+<div class="main-content bg">
+
+   
+    <div class="head">
+        <h2 class="head-t">
+       {{c_a_detail.Lesson.title|title}}
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{c_a_detail.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+    </small> -->
+        <p class="text m-0">
+            {{c_a_detail.text}}
+        </p>
+
+    </div>
+    
+</div>{% endif %}{% if c_f_detail %}
+<div class="main-content-fr bg">
+
+    
+    <div class="head">
+        <h2 class="head-t">
+
+            {{c_f_detail.Lesson.title|title}}
+
+        </h2>
+
+    </div>
+    <div class="container">
+
+        <h1 class="title-d">
+            {{c_f_detail.title|title}}
+        </h1>
+        <!-- <small class="small">
+            {{ar_detail.create|date:'Y - d - m'}}
+    </small> -->
+        <p class="text m-0 pb">
+            {{c_f_detail.text}}
+        </p>
+
+    </div>
+   
+
+    </div> {% endif %}
+{% endblock body %}
