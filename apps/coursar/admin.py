@@ -11,7 +11,7 @@ from .models import Cours_Ar_T
 
 # admin.site.register(Post, PostAdmin)
 
-class ArAdmin(admin.ModelAdmin):
+class ArAdmin(ImportExportModelAdmin,admin.ModelAdmin):
 	list_display = ('title', 'status','create')
 admin.site.register(Brevet_Ar, ArAdmin)
 admin.site.register(Cours_Ar, ArAdmin)
