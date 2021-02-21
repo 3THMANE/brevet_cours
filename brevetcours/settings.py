@@ -85,12 +85,12 @@ WSGI_APPLICATION = 'brevetcours.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
 
 # DEVELOPMENT_MDE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
@@ -114,17 +114,17 @@ DATABASES = {
 # DATABASE_URL = os.environ['DATABASE_URL']
 
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME' : 'd19dkfjuh8r65m',
-#         'USER' : 'bsjotpwowfswnz',
-#         'PORT' : '5432',
-#         'PASSWORD' : 'e0b758c277989aa6fe3179d7314ca4fdd41d89abbdd424f98202dd7c4672b2c3',
-#         'HOST' : 'ec2-54-85-13-135.compute-1.amazonaws.com',
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME' : 'd19dkfjuh8r65m',
+        'USER' : 'bsjotpwowfswnz',
+        'PORT' : '5432',
+        'PASSWORD' : 'e0b758c277989aa6fe3179d7314ca4fdd41d89abbdd424f98202dd7c4672b2c3',
+        'HOST' : 'ec2-54-85-13-135.compute-1.amazonaws.com',
         
-#     }
-# }
+    }
+}
 
 # import dj_database_url
 # DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
