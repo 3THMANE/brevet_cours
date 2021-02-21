@@ -16,8 +16,8 @@ def home(request):
 
 
 def courses(request):
-    cours_ar = Cours_Ar.objects.all()
-    cours_fr = Cours_Fr.objects.all()
+    cours_ar = Cours_Ar.objects.order_by('-create')[0:3]
+    cours_fr = Cours_Fr.objects.order_by('-create')[0:3]
     return render(request, 'home/all_c.html',{
         'cours_ar':cours_ar,
         'cours_fr':cours_fr

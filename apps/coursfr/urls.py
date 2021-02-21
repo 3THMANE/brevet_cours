@@ -3,7 +3,7 @@ from .import views
 
 urlpatterns = [
     path('courses/fr/', views.coursesfr, name="coursesfr"),
-    
+    # path('loadfr/', views.Loadfr, name='Loadfr'),
     path('brevet-fr/2020/', views.b_fr_20,name='b_fr_20'),
     path('brevet-fr/2019/', views.b_fr_19,name='b_fr_19'),
     path('brevet-fr/2018/', views.b_fr_18,name='b_fr_18'),

@@ -1,6 +1,28 @@
-{% extends "base.html" %} {% load static %} {% block title %}Brevet-Cours | Arabic-courses{% endblock title%}{% block nav %} {% include "ar/nav.html" %} {% endblock nav %} {% block body %}
+{% extends "base.html" %} {% load static %}{% block title %}Brevet-Cours | About{% endblock title%} {% block nav %} {% include "navbar.html" %} {% endblock nav %} {% block body %}
 <div class="main-content">
     <style>
+    .cours {
+    background-color: #15c29a;
+    color: #fff;
+    /* border-radius: 5px; */
+    transition: none;
+    padding: 16px 20px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+    .cours {
+    width: 100%;
+    text-align: center;
+}
+        .f{
+            margin-top: -5rem;
+
+        }
+        .main-footer{
+            margin-top: 5rem;
+
+        }
         a.rda {
             
             margin: 0 27rem 0px 0;
@@ -20,6 +42,19 @@
             color: #444;
             text-decoration:revert;
         }
+    @media(max-width: 768px){
+        a.rda {
+            margin: 0 40% 0px 0;   
+        }
+        a.rdf {
+            margin: 0px 0px 0px 40%;   
+        }
+        .cours {
+    /* padding: 16px 0px; */
+    font-size: 1.3rem;
+    margin: -36px -5% 51px;
+    width: 110.6%;
+    }
     </style>
 {% if cours_ar %}
     <div class="container">
@@ -44,7 +79,7 @@
     <div class="main-content-fr">
          <div class="container fr">
          {% if cours_fr %}
-            <h1 class="cours">Courses De Francais  </h1>
+            <h1 class="cours f">Courses De Francais  </h1>
             {% for coursf in cours_fr %}
             <a href="{% url 'detail' coursf.slug %}" class="link">
                 <div class=" row1">

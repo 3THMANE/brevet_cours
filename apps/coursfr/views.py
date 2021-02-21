@@ -16,6 +16,18 @@ def c_f_detail(request, slug):
         'c_f_detail':c_f_detail
         
         })
+# def Loadfr(request):
+#     offset = int(request.POST['offset'])
+#     limit=3
+    
+#     cours_fr=Cours_Fr.objects.all()[offset:limit+offset]
+#     total = Cours_Fr.objects.count()
+#     data={}
+#     cours = serializers.serialize('json',cours_fr)
+#     return JsonResponse(data={
+#         'cours_fr':cours,
+#         'totalr':total
+#     })
 def b_fr_20(request):
     b_fr_20 = Brevet_Fr.objects.filter(select_brevet='brevet_fr_20')[0:4]
     return render(request,'fr/cours_fr.html',{'b_fr_20' : b_fr_20,})

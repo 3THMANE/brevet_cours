@@ -445,7 +445,8 @@ ul {
     background-color: #353535;
     display: block;
     color: #c6c6c6;
-    padding: 5rem 0;
+    padding: 5rem 0px;
+    margin: 0 0 0 0px;
 }
 
 input[type="text"] {
@@ -554,4 +555,28 @@ textarea {
 .cours {
     width: 100%;
     text-align: center;
+}
+
+
+button#loadbtn {
+    /* text-align: center; */
+    display: block;
+    /* align-items: center; */
+    /* align-content: center; */
+    height: 2.5rem;
+    width: 20%;
+    border: 1px solid #15c29a;
+    margin: 0px 38% 30px;
+    background: #fff;
+    padding: 0px;
+    font-family: 'Cairo-b';
+    border-radius: 3px;
+}
+button#loadbtn:hover, 
+button#loadbtn:focus {
+    outline: #15c29a;
+    color: #fff;
+    background: #3be3bcc2;
+    border: 1px solid #fff;
+    transition: all .3s;
 }

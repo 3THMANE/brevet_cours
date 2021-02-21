@@ -22,7 +22,7 @@ from .import views
 urlpatterns = [
     path('admin-ethmane/', admin.site.urls),
     path('', include('apps.home.urls')),
-    # path('summernote/', include('django_summernote.urls')),
+    path('summernote/', include('django_summernote.urls')),
     # path('tinymce/', include('tinymce.urls')),
     # path('jet/', include('jet.urls', 'jet')),
    
@@ -33,3 +33,4 @@ if settings.DEBUG:
 
 handler404 = views.error_404
 handler500 = views.error_500
+admin.site_header='ethmane'
