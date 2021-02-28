@@ -68,6 +68,8 @@ ul {
 
 .main-navbar .nav-brand span {
     color: var(--bs-primary);
+    font-size: 15px;
+    margin-left: -5px;
 }
 
 .main-navbar .nav-list {
@@ -165,6 +167,10 @@ ul {
         font-size: 20px;
         font-family:"Cairo"
     }
+    .head .head-t {
+        font-size:1.7rem;
+        padding-top: 15rem;
+    }
     .load-btn {
         position: relative;
         right: 4%;
@@ -176,9 +182,9 @@ ul {
         margin-left: -40px;
         margin-right: 40px;
     }
-    .main-navbar .nav-brand {
+    /* .main-navbar .nav-brand {
         margin-left: 20px;
-    }
+    } */
     .btn-bar {
         position: absolute;
         right: -20px;
@@ -188,7 +194,7 @@ ul {
 
 @media (max-width: 768px) {
     .social {
-        margin-top: -10rem;
+        margin-top: -3rem;
         padding: 40px;
     }
     .col {

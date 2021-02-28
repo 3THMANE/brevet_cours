@@ -5,7 +5,7 @@ from .models import Brevet_Ar
 from .models import Cours_Ar
 
 def coursesar(request):
-    cours_ar = Cours_Ar.objects.order_by('-create')[0:3]
+    cours_ar = Cours_Ar.objects.order_by('-create')
    
     return render(request, 'ar/all_ar.html',{
         'cours_ar':cours_ar,
@@ -18,18 +18,7 @@ def c_a_detail(request, slug):
         'c_a_detail':c_a_detail
         
         }) 
-# def Load(request):
-#     offset = int(request.POST['offset'])
-#     limit=3
-    
-#     cours_ar=Cours_Ar.objects.all()[offset:limit+offset]
-#     total = Cours_Ar.objects.count()
-#     data={}
-#     cours = serializers.serialize('json',cours_ar)
-#     return JsonResponse(data={
-#         'cours_ar':cours,
-#         'totalr':total
-#     })
+
 def b_ar_20(request):
     b_ar_20 = Brevet_Ar.objects.filter(select_brevet='brevet_ar_20')[0:4]
     return render(request,'ar/cours_ar.html',{'b_ar_20' : b_ar_20})

@@ -20,58 +20,5 @@
        </div>{% endif %}
 
 
-<!-- <button id="loadbtn">Load More</button>
-{/* <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
-<script>
-$(document).ready(function(){
-        $("#loadbtn").on('click',function(){
-            var _Result =$(".row1").length;
-        $.ajax({
-            url:"{% url 'load' %}",
-            type:"post",
-            data:{
-                'offset':_Result,
-                'csrfmiddlewaretoken': "{{csrf_token}}"
 
-            },
-            dataType: 'json',
-            beforeSend:function(){
-                $("#loadbtn").addClass('disabled').text('loading ..');
-            },
-            success:function(res){
-               //console.log(res)
-                var _html ='';
-                var json_data = $.parseJSON(res.cours_ar);
-                $.each(json_data,function(index,data){
-                    _html +='<a href="" class="link">\
-                        <div class=" row1">\
-                            <h2 class="title">'+ data.fields.title +'</h2>\
-                            <small class="small">\
-                                 <i class="fa-clock fa-fw far">\
-                                 </i> '+data.fields.date+' <i class="fa-tags fa-fw fas">\
-                                 </i> '+data.fields.Lesson.title+' </small>\
-                            <div class="text">'+data.fields.text+'\
-                                <span class="rd"> Plus ...</span>\
-                            </div>\
-                        </div>\
-                    </a>\
-                    ';
-                });
-               $(".main-content-fr .container .fr").append(_html);
-               if (json_data.length > 0){
-                $("#loadbtn").removeClass('disabled').text('Load More');
-                  console.log(" was done ")
-                  
-               }else{
-                   //console.log('good  job  boys ')
-                   $("#loadbtn").css('display','none')
-               }
-
-          },
-        });
-          
-
-        });
-
-    }); </script>*/} -->
 {% endblock body %}

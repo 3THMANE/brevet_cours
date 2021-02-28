@@ -2,7 +2,7 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    # path('load/', views.Load, name='load'),
+    
     path('courses/<slug>', views.c_a_detail, name="a_detail"),
     path('brevet-ar/2020/', views.b_ar_20, name='b_ar_20'),
     # path('b-ar', views.cours, name='cours'),(?P<slug>[-a-zA-Z0-9_]+)/$'

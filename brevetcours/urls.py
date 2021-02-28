@@ -33,4 +33,4 @@ if settings.DEBUG:
 
 handler404 = views.error_404
 handler500 = views.error_500
-admin.site_header='ethmane'
+# admin.site_header='ethmane'
