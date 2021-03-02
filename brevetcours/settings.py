@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'apps.coursar',
     'apps.coursfr',
     'apps.home',
-    'django_summernote',
-    # 'tinymce',
+    # 'django_summernote',
+    'tinymce',
     # 'jet',  
     'import_export',
 ]
@@ -201,4 +201,4 @@ STATICFILLES_DIRS = BASE_DIR / 'static'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+# X_FRAME_OPTIONS = 'SAMEORIGIN'
