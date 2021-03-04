@@ -14,9 +14,11 @@ from pathlib import Path
 import dj_database_url
 import os
 import sys
-# import django-heroku
-# django_heroku.settings(locals())
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+import environ
+
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -24,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRIT_KEY",get_random_secret_key())
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = False
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "brevet-cours.herokuapp.com,127.0.0.1").split(",")
 
@@ -86,12 +88,12 @@ WSGI_APPLICATION = 'brevetcours.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # DEVELOPMENT_MDE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
@@ -115,17 +117,17 @@ WSGI_APPLICATION = 'brevetcours.wsgi.application'
 # DATABASE_URL = os.environ['DATABASE_URL']
 
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME' : 'd19dkfjuh8r65m',
-        'USER' : 'bsjotpwowfswnz',
-        'PORT' : '5432',
-        'PASSWORD' : 'e0b758c277989aa6fe3179d7314ca4fdd41d89abbdd424f98202dd7c4672b2c3',
-        'HOST' : 'ec2-54-85-13-135.compute-1.amazonaws.com',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME' : 'd19dkfjuh8r65m',
+#         'USER' : 'bsjotpwowfswnz',
+#         'PORT' : '5432',
+#         'PASSWORD' : 'e0b758c277989aa6fe3179d7314ca4fdd41d89abbdd424f98202dd7c4672b2c3',
+#         'HOST' : 'ec2-54-85-13-135.compute-1.amazonaws.com',
         
-    }
-}
+#     }
+# }
 
 # import dj_database_url
 # DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
